@@ -1,8 +1,7 @@
 # AWS-Serverless-Data-Lake
 
-In this workshop, I ingested streaming data from the Kinesis Data Generator (KDG) into Amazon S3. 
-then created a big data processing pipeline without servers or clusters, which is ready to process huge amounts of data. I also created an AWS Glue transform job to perform basic transformations on the Amazon S3 source data.
-and finaly, I used a larger public dataset with more tables to observe the various AWS services in collaboration using AWS Athena.
+To demonstrate the power of data lake architectures, 
+In this workshop, I ingested streaming data from the Kinesis Data Generator (KDG) into Amazon S3. Then created a big data processing pipeline without servers or clusters, which is ready to process huge amounts of data, the dataset is an open dataset at AWS Open Data Registry, called GDELT and it has ~170GB+ size, and is comprised of thousands of uncompressed CSV files. I also created an AWS Glue transform job to perform basic transformations on the Amazon S3 source data. And finaly, I used the larger public dataset with more tables to observe the various AWS services in collaboration using AWS Athena.
 
 
 1.  Create a CloudFormation template and uplode this file (serverlessDataLakeDay.json)
@@ -122,3 +121,7 @@ LOCATION 's3://gdelt-open-data/events/';
 
 
 <img width="698" alt="Screen Shot 2022-11-18 at 4 08 32 PM" src="https://user-images.githubusercontent.com/74584964/202652621-790b106f-94e2-495c-83c4-68f02d609a11.png">
+
+
+This workshop is base on AWS workshop studio the link is below.
+https://catalog.us-east-1.prod.workshops.aws/workshops/ea7ddf16-5e0a-4ec7-b54e-5cadf3028b78/en-US
